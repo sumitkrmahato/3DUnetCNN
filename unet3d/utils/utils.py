@@ -6,8 +6,8 @@ import nibabel as nib
 import numpy as np
 from nilearn.image import reorder_img, new_img_like
 
-from .nilearn_custom_utils.nilearn_utils import crop_img_to
-from .sitk_utils import resample_to_spacing, calculate_origin_offset
+from unet3d.utils.nilearn_custom_utils.nilearn_utils import crop_img_to
+from unet3d.utils.sitk_utils import resample_to_spacing, calculate_origin_offset
 
 
 def pickle_dump(item, out_file):

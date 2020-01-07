@@ -3,7 +3,7 @@ import os
 import numpy as np
 import tables
 
-from .normalize import normalize_data_storage, reslice_image_set
+from unet3d.normalize import normalize_data_storage, reslice_image_set
 
 
 def create_data_file(out_file, n_channels, n_samples, image_shape):

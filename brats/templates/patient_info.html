@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Brain Tumor Segmentation</title>
+</head>
+<body>
+    <h1>MRI Segmentation for Brain Tumor</h1>
+    <form id="acceptPatientIndex" action="info" method="post" >
+        <p>Select Patient Index: <select name="data_index">
+            <option value="104">104</option>
+            <option value="68">068</option>
+            <option value="51">051</option>
+            <option value="163">163</option>
+            <option value="141">141</option>
+            <option value="45">045</option>
+            <option value="153">153</option>
+            <option value="133">133</option>
+            <option value="61">061</option>
+            <option value="147">147</option>
+            <option value="56">056</option>
+            <option value="70">070</option>
+            <option value="11">011</option>
+            <option value="17">017</option>
+            <option value="82">082</option>
+            <option value="12">012</option>
+            <option value="18">018</option>
+            <option value="25">025</option>
+            <option value="78">078</option>
+            <option value="50">050</option>
+            <option value="159">159</option>
+            <option value="148">148</option>
+            <option value="130">130</option>
+            <option value="24">024</option>
+            <option value="72">072</option>
+            <option value="49">049</option>
+            <option value="95">095</option>
+            <option value="120">120</option>
+            <option value="1">001</option>
+            <option value="103">103</option>
+            <option value="14">014</option>
+            <option value="99">099</option>
+        </select>
+        </p>
+    <p><input type="submit" value="Get patient data"/></p>
+    </form>
+    <form id="prediction" action="segmentation" method="post" >
+        <p><input type="submit" value="Predict Segmentation"/></p>
+    </form>
+</body>
+</html>

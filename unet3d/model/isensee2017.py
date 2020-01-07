@@ -4,8 +4,8 @@ from keras.layers import Input, LeakyReLU, Add, UpSampling3D, Activation, Spatia
 from keras.engine import Model
 from keras.optimizers import Adam
 
-from .unet import create_convolution_block, concatenate
-from ..metrics import weighted_dice_coefficient_loss
+from unet3d.model.unet import create_convolution_block, concatenate
+from unet3d.metrics import weighted_dice_coefficient_loss
 
 
 create_convolution_block = partial(create_convolution_block, activation=LeakyReLU, instance_normalization=True)
