@@ -15,7 +15,7 @@ def patient_mri():
     data_index = request.form["data_index"]
     saved_index = int(data_index)
     show_patient_mri(saved_index)
-    return render_template('patient_info.html')
+    return render_template('predict.html')
 
 @app.route('/segmentation', methods=['POST'])
 def tumor_segmentation():
